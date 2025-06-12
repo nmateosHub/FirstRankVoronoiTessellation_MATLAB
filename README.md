@@ -36,9 +36,11 @@ This approach is particularly useful in **single-molecule localization microscop
 [Data_voronoi, Data_voronoi_high, threshold] = VoronoiTessel_1st_rank_density_th(XY, thL);
 ```
 INPUTS:
+
   XY   - Nx2 or Nx3 matrix with 2D coordinates (and optional intensity)
   thL  - Threshold level (quantile) for identifying high-density points
 OUTPUTS:
+
   Data_voronoi       - Voronoi-based metrics for input points:
                       [X Y (optional Z) density norm. rank score]
   Data_voronoi_high  - Subset of Data_voronoi above the density threshold
