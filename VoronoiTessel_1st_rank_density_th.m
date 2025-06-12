@@ -36,6 +36,9 @@ function [Data_voronoi, Data_voronoi_high, threshold] = VoronoiTessel_1st_rank_d
 %
 % This code is open-source and distributed under the MIT License.
 
+if size(XY,2)<3
+    XY = [XY ones(size(XY,1),1)];
+end
 
 if isempty(XY)
     Data_voronoi = [];
