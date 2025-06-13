@@ -23,4 +23,4 @@ function [Area,idx,arearank,neigh] = AreaVoronoiRegions_1stRank(V,C,dt)
     arearank = M*Area_nNaN;
     % Those that had open areas, its area1strank continues to be NaN:
     arearank(isnan(Area))=NaN;
-    neigh=full(sum(M,2));
+    neigh=full(sum(M,2))-1;
